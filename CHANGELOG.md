@@ -1,5 +1,9 @@
 ## Change Log
 
+### v1.0.3 (May 29, 2020) with Core SDK `v3.0.132`
+
+* Improved stability.
+
 ### v1.0.2 (May 14, 2020)
 * Added - `SendBirdUIKit.setLogLevel(LogLevel level)`
 * Added - `LogLevel` in `SendBirdUIKit`
