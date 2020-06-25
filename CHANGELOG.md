@@ -1,6 +1,11 @@
 ## Change Log
 
-### v1.0.4 (May 14, 2020) with Core SDK `v3.0.133`
+### v1.0.5 (June 25, 2020) with Core SDK `v3.0.136`
+* Added - Unknown type message
+* Added `setGroupChannelListQuery()` in `ChannelListFragment.Builder`.
+* Added `setMessageListParams()` in `ChannelFragment.Builder`.
+
+### v1.0.4 (June 14, 2020) with Core SDK `v3.0.133`
 * The following functions have been opened to send custom data.
     * Added `onBeforeSendUserMessage()` with `UserMessageParams` in `ChannelFragment`.
     * Added `onBeforeUpdateUserMessage()` with `UserMessageParams` in `ChannelFragment`.
@@ -29,7 +34,6 @@
     * Added `createChannelSettingsFragment()` with `channelUrl` in `ChannelSettingsActivity`.
     * Added `createCreateChannelFragment()` in `CreateChannelActivity`.
     * Added `createMemberListFragment()` with `channelUrl` in `MemberListActivity`.
-
 
 ### v1.0.3 (May 29, 2020) with Core SDK `v3.0.132`
 * Improved stability.
