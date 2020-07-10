@@ -1,5 +1,16 @@
 ## Change Log
 
+### v1.1.0 (July 10, 2020) with Core SDK `v3.0.137`
+* Supports reaction feature.
+    * Added `EmojiManager` class.
+    * Added `EmojiListAdapter` class.
+    * Added `EmojiReactionListAdapter` class.
+    * Added `EmojiReactionUserListAdapter` class.
+    * Added `setEmojiReactionClickListener(OnEmojiReactionClickListener emojiReactionClickListener)` in `ChannelFragment.Builder`.
+    * Added `setEmojiReactionLongClickListener(OnEmojiReactionLongClickListener emojiReactionLongClickListener)` in `ChannelFragment.Builder`.
+    * Added `setEmojiReactionMoreButtonClickListener(OnItemClickListener<BaseMessage> emojiReactionMoreButtonClickListener)` in `ChannelFragment.Builder`.
+* Improved stability.
+
 ### v1.0.5 (June 25, 2020) with Core SDK `v3.0.136`
 * Added - Unknown type message
 * Added `setGroupChannelListQuery()` in `ChannelListFragment.Builder`.
