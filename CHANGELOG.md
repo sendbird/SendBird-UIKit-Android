@@ -1,5 +1,17 @@
 ## Change Log
 
+### v1.1.1 (July 16, 2020) with Core SDK `v3.0.138`
+* The following functions have been opened to send custom data.
+    * Added `onBeforeInviteUsers()` with `userIds` in `InviteChannelFragment`.
+    * Added `inviteUser()` with `userIds` in `InviteChannelFragment`.
+    * Added `onNewUserInvited()` in `InviteChannelFragment`.
+    * Added `setInviteButtonText()` in `InviteChannelFragment`.
+    * Added `setInviteButtonEnabled()` in `InviteChannelFragment`.
+    * Added `setCreateButtonText()` in `CreateChannelFragment`.
+    * Added `setCreateButtonEnabled()` in `CreateChannelFragment`.
+    * Added `setMemberSettingClickListener()` with `onClickListener` in `ChannelSettingsFragment.Builder`.
+* Improved stability.
+    
 ### v1.1.0 (July 10, 2020) with Core SDK `v3.0.137`
 * Supports reaction feature.
     * Added `EmojiManager` class.
