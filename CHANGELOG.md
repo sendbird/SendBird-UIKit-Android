@@ -1,5 +1,10 @@
 ## Change Log
 
+### v1.1.2 (July 22, 2020)
+* The following functions have been opened to send custom data.
+    * Added `newIntentFromCustomActivity()` in each UIKit Activity.
+* Improved stability.
+
 ### v1.1.1 (July 16, 2020) with Core SDK `v3.0.138`
 * The following functions have been opened to send custom data.
     * Added `onBeforeInviteUsers()` with `userIds` in `InviteChannelFragment`.
