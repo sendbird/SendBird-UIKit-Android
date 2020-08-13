@@ -1,5 +1,9 @@
 ## Change Log
 
+### v1.1.3 (August 13, 2020) with Core SDK `v3.0.139`
+* Implement OG tag messages.
+* Improved stability.
+
 ### v1.1.2 (July 22, 2020)
 * The following functions have been opened to send custom data.
     * Added `newIntentFromCustomActivity()` in each UIKit Activity.
