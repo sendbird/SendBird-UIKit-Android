@@ -1,4 +1,30 @@
 ## Change Log
+### v1.2.0 (August 27, 2020) with Core SDK `v3.0.142`
+* Added operator features
+    * Member managing (ban/unban, mute/unmute, promote/dismiss)
+    * Moderation feature for the operator
+    * Channel freezing/unfreezing
+    * Channel creator will be the default operator
+    * Added `ModerationActivity`, `BannedListActivity`, `OperatorListActivity`, `MutedMemberListActivity`, and `PromoteOperatorsActivity`.
+    * Added `ModerationFragment`, `BannedListFragment`, `OperatorListFragment`, `MutedMemberListFragment`, and `PromoteOperatorsFragment`.
+* Added GroupChannel type selector.
+* Added `newIntentFromCustomActivity` on each activities on UIKit
+* Added `setCreateButtonText(String text)` in `InviteChannelFragment.Builder`
+* Added `setInvitedButtonText(String text)` in `CreateChannelFragment.Builder`
+* Deprecated `setMemberSettingClickListener(View.OnClickListener listener)` in `ChannelSettingsFragment`.
+* Removed button attributes (Replaced with the button attributes of each component.)
+    * `sb_button_contained_style`
+    * `sb_button_uncontained_style`
+    * `sb_button_warning_style`
+    * `sb_button_cancel_style`
+    * `sb_icon_button_style`
+* Removed button styles (Replaced with the button attributes of each component.)
+    * `Widget.SendBird.Button`
+    * `Widget.SendBird.Button.Contained`
+    * `Widget.SendBird.Button.Uncontained`
+    * `Widget.SendBird.Button.Alert`
+    * `Widget.SendBird.Button.Cancel`
+    * `Widget.SendBird.IconButton`
 
 ### v1.1.3 (August 13, 2020) with Core SDK `v3.0.139`
 * Implement OG tag messages.
