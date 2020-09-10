@@ -1,4 +1,9 @@
 ## Change Log
+
+### v1.2.1 (September 10, 2020) with Core SDK `v3.0.144`
+* Supported message group UI.
+* Added `setUseMessageGroupUI` in `ChannelFragment`.
+
 ### v1.2.0 (August 27, 2020) with Core SDK `v3.0.142`
 * Added operator features
     * Member managing (ban/unban, mute/unmute, promote/dismiss)
