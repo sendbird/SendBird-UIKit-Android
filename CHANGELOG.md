@@ -1,5 +1,11 @@
 ## Change Log
 
+### v1.2.2 (September 17, 2020) with Core SDK `v3.0.145`
+* Supported user profile.
+    * Added `setUseDefaultUserProfile(boolean)` in `SendBirdUIKit`
+    * Added `setCustomParamsHandler(CustomParamsHandler handler)` in `SendbirdUIKit`
+    * Added `setOnProfileClickListener`, `setUseUserProfile` in `ChannelFragment`, `MemberListFragment`, `BannedListFragment`, `MutedMemberListFragment`, `OperatorListFragment`.
+
 ### v1.2.1 (September 10, 2020) with Core SDK `v3.0.144`
 * Supported message group UI.
 * Added `setUseMessageGroupUI` in `ChannelFragment`.
