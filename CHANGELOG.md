@@ -1,5 +1,9 @@
 ## Change Log
 
+### v1.2.3 (October 19, 2020) with Core SDK `v3.0.149`
+* Added `setUseHeaderRightButton(boolean)` in `ChannelSettingsFragment`, `CreateChannelFragment`, `InviteChannelFragment`, `PromoteOperatorsFragment`.
+* Improved stability.
+
 ### v1.2.2 (September 17, 2020) with Core SDK `v3.0.145`
 * Supported user profile.
     * Added `setUseDefaultUserProfile(boolean)` in `SendBirdUIKit`
