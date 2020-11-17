@@ -1,5 +1,8 @@
 ## Change Log
 
+### v1.2.4 (November 17, 2020) with Core SDK `v3.0.150`
+* Disabled android.enableJetifier
+
 ### v1.2.3 (October 19, 2020) with Core SDK `v3.0.149`
 * Added `setUseHeaderRightButton(boolean)` in `ChannelSettingsFragment`, `CreateChannelFragment`, `InviteChannelFragment`, `PromoteOperatorsFragment`.
 * Improved stability.
