@@ -9,7 +9,7 @@
   1. [Before getting started](#before-getting-started)
   1. [Getting started](#getting-started)
   1. [Implementation guide](#implementation-guide)
-  1. [UIKit at a glance](#implementation-guide)  
+  1. [UIKit at a glance](#uikit-at-a-glance)  
 
 <br />
 
@@ -292,5 +292,3 @@ The UIKit also provides the following components. All components can be called w
 |Moderation|Shows the list of moderation options for the current channel.|
 |MutedMember|Shows the list of members who are muted in the current channel.|
 |OperatorList|Shows the list of members who are appointed as an operator in the current channel.|
-
-
