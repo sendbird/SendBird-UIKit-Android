@@ -17,7 +17,7 @@
 
 **Sendbird UIKit** for Android is a development kit with an user interface that enables an easy and fast integration of standard chat features into new or existing client apps. From the overall theme to individual styles such as colors and fonts, components can be fully customized to create an in-app chat experience unique to your brand identity.
 
-> **Note**: Currently, UIKit for iOS supports group channels only.
+> **Note**: Currently, UIKit for Android supports group channels only.
 
 ### Benefits
 
@@ -36,7 +36,7 @@ Find out more about Sendbird UIKit for Android on [UIKit for Android doc](https:
 
 ## Before getting started
 
-This section shows the prerequisites you need to check to use Sendbird UIKit for iOS.
+This section shows the prerequisites you need to check to use Sendbird UIKit for Android.
 
 ### Requirements
 
