@@ -30,7 +30,7 @@
 
 ### More about Sendbird UIKit for Android
 
-Find out more about Sendbird UIKit for Android on [UIKit for Android doc](https://sendbird.com/docs/uikit/v1/android/getting-started/about-uikit). If you have any comments or questions regarding bugs and feature requests, visit [Sendbird community](https://community.sendbird.com). 
+Find out more about Sendbird UIKit for Android on [UIKit for Android doc](https://sendbird.com/docs/uikit/v1/android/getting-started/about-uikit). If you have any comments or questions regarding bugs and feature requests, visit [Sendbird community](https://community.sendbird.com/c/sendbird-chat-uikit/34). 
 
 <br />
 
@@ -210,10 +210,6 @@ Add the created `BaseApplication` to the `AndroidManifest.xml`.
                 </activity>
         </application>
 ```
-
-A header, which acts as an `ActionBar`, is provided by our UIKit. Implement it as follows:
-
-> **Note**: Skip this step if you want to use Android's [ActionBar](https://developer.android.com/reference/android/app/ActionBar) instead.
 
 ```xml
 <resources>
