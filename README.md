@@ -79,21 +79,21 @@ UIKit for Android is installed via `Gradle`. Begin by opening the project's top-
 
 ```gradle
 buildscript {
-        repositories {
-                google()
-                jcenter()
-        }
-        dependencies {
-                classpath 'com.android.tools.build:gradle:3.5.0'
-        }
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.5.0'
+    }
 }
 
 allprojects {
-        repositories {
-                google()
-                jcenter()
-                maven { url "https://jitpack.io" }
-        }
+    repositories {
+        google()
+        jcenter()
+        maven { url "https://jitpack.io" }
+    }
 }
 ```
 
@@ -105,23 +105,23 @@ Then, open the `build.gradle` file at the application level. For `Java` and `Kot
 apply plugin: 'com.android.application'
 
 android {
-        ...
-
-        dataBinding {
-                enabled = true
-        }
-
-        compileOptions {
-                sourceCompatibility JavaVersion.VERSION_1_8
-                targetCompatibility JavaVersion.VERSION_1_8
-        }
-
-        ...
+    ...
+    
+    dataBinding {
+        enabled = true
+    }
+    
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    
+    ...
 }
 
 dependencies {
-        implementation 'com.sendbird.sdk:uikit:1.2.4'
-        ...
+    implementation 'com.sendbird.sdk:uikit:LATEST_VERSION'
+    ...
 }
 ```
 
@@ -147,42 +147,42 @@ import com.sendbird.uikit.adapter.SendBirdUIKitAdapter;
 import com.sendbird.uikit.interfaces.UserInfo;
 
 public class BaseApplication extends Application {
-        @Override
-        public void onCreate() {
-                super.onCreate();
-
-                SendBirdUIKit.init(new SendBirdUIKitAdapter() {
-                        @Override
-                        public String getAppId() {
-                                return "2D7B4CDB-932F-4082-9B09-A1153792DC8D";  // The ID of the Sendbird application which UIKit sample app uses.
-                        }
-
-                        @Override
-                        public String getAccessToken() {
-                                return "";
-                        }
-
-                        @Override
-                        public UserInfo getUserInfo() {
-                                return new UserInfo() {
-                                        @Override
-                                        public String getUserId() {
-                                                return USER_ID;
-                                        }
-
-                                        @Override
-                                        public String getNickname() {
-                                                return USER_NICKNAME;
-                                        }
-
-                                        @Override
-                                        public String getProfileUrl() {
-                                                return "";
-                                        }
-                                };
-                        }
-                }, this);
-        }
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        
+        SendBirdUIKit.init(new SendBirdUIKitAdapter() {
+            @Override
+            public String getAppId() {
+                return "2D7B4CDB-932F-4082-9B09-A1153792DC8D";  // The ID of the Sendbird application which UIKit sample app uses.
+            }
+            
+            @Override
+            public String getAccessToken() {
+                return "";
+            }
+            
+            @Override
+            public UserInfo getUserInfo() {
+                return new UserInfo() {
+                    @Override
+                    public String getUserId() {
+                        return USER_ID;
+                    }
+                    
+                    @Override
+                    public String getNickname() {
+                        return USER_NICKNAME;
+                    }
+                    
+                    @Override
+                    public String getProfileUrl() {
+                        return "";
+                    }
+                };
+            }
+        }, this);
+    }
 }
 ```
 
@@ -193,33 +193,33 @@ Add the created `BaseApplication` to the `AndroidManifest.xml`.
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-        package="com.sendbird.uikitapplication">
-
-        <application
+    package="com.sendbird.uikitapplication">
+    
+    <application
                 android:name=".BaseApplication"
                 android:icon="@mipmap/ic_launcher"
                 android:label="@string/app_name"
                 android:roundIcon="@mipmap/ic_launcher_round"
                 android:theme="@style/AppTheme">
-                <activity android:name=".MainActivity">
-                        <intent-filter>
-                                <action android:name="android.intent.action.MAIN" />
-                                ...
-                                <category android:name="android.intent.category.LAUNCHER" />
-                        </intent-filter>
-                </activity>
-        </application>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                ...
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
 ```
 
 ```xml
 <resources>
-        <!-- Base application theme. -->
-        <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-                <!-- Customize your theme here. -->
-                <item name="colorPrimary">@color/colorPrimary</item>
-                <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-                <item name="colorAccent">@color/colorAccent</item>
-        </style>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+            <!-- Customize your theme here. -->
+            <item name="colorPrimary">@color/colorPrimary</item>
+            <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+            <item name="colorAccent">@color/colorAccent</item>
+    </style>
 
 </resources>
 ```
