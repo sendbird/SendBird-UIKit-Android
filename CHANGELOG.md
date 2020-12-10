@@ -1,4 +1,10 @@
-## Change Log
+# Change Log
+
+### v1.2.5 (December 10, 2020) with Core SDK `v3.0.152`
+* Add opened interfaces for loading dialog
+    * Added `shouldShowLoadingDialog()` in `ChannelFragment`, `MemberListFragment`, `BannedListFragment`, `OperatorListFragment`, `ModerationFragment`, and `MutedMemberListFragment`.
+    * Added `shouldDismissLoadingDialog()` in `ChannelFragment`, `MemberListFragment`, `BannedListFragment`, `OperatorListFragment`, `ModerationFragment`, and `MutedMemberListFragment`.
+* Improved stability.
 
 ### v1.2.4 (November 17, 2020) with Core SDK `v3.0.150`
 * Disabled android.enableJetifier
