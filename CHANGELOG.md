@@ -1,5 +1,16 @@
 # Change Log
 
+### v2.0.0 (December 23, 2020) with Core SDK `v3.0.153`
+* Added OpenChannel features.
+    * Added `OpenChannelSettingsActivity`, `ParticipantsListActivity`.
+    * Added `OpenChannelFragment`, `OpenChannelSettingsFragment` and `ParticipantsListFragment`.
+    * Added `onBeforeUpdateOpenChannel(OpenChannelParams params)` in `CustomParamsHandler`.
+    * Added `styles_overlay.xml`.
+* Added `enum KeyboardDisplayType { Plane, Dialog }`.
+    * Added `setKeyboardDisplayType(KeyboardDisplayType type)` in `ChannelFragment.Builder`.
+    * Added `setKeyboardDisplayType(KeyboardDisplayType type)` in `OpenChannelFragment.Builder`.
+* Improved stability.
+
 ### v1.2.5 (December 10, 2020) with Core SDK `v3.0.152`
 * Add opened interfaces for loading dialog
     * Added `shouldShowLoadingDialog()` in `ChannelFragment`, `MemberListFragment`, `BannedListFragment`, `OperatorListFragment`, `ModerationFragment`, and `MutedMemberListFragment`.
