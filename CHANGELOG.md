@@ -1,5 +1,15 @@
 # Change Log
 
+### v2.0.1 (January 11, 2021) with Core SDK `v3.0.154`
+* Added `showMediaSelectDialog()` in `ChannelFragment` and `OpenChannelFragment`.
+* Added `takeCamera()`, `takePhoto()`, and `takeFile()` in `ChannelFragment` and `OpenChannelFragment`.
+* Added `setUseInputLeftButton(boolean useInputLeftButton)` in `ChannelFragment.Builder` and `OpenChannelFragment.Builder`.
+* Support image resizing and compression
+    * Added `setUseImageCompression(boolean)` and `shouldUseImageCompression()` in `SendBirdUIKit`
+    * Added `setCompressQuality(int)` and `getCompressQuality()` in `SendBirdUIKit`
+    * Added `setResizingSize(Pair<Integer, Integer>)` and `getResizingSize()` in `SendBirdUIKit`
+* Fix compile issue on gradle 4.1.1
+
 ### v2.0.0 (December 23, 2020) with Core SDK `v3.0.153`
 * Added OpenChannel features.
     * Added `OpenChannelSettingsActivity`, `ParticipantsListActivity`.
