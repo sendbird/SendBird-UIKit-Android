@@ -1,5 +1,9 @@
 # Change Log
 
+### v2.0.2 (January 26, 2021) with Core SDK `v3.0.156`
+* Added `setEmptyIcon(int resId)` in `ChannelFragment.Builder`, `ChannelListFragment.Builder`, and `OpenChannelFragment.Builder`.
+* Added `setEmptyText(int resId)` in `ChannelFragment.Builder`, `ChannelListFragment.Builder`, and `OpenChannelFragment.Builder`.
+
 ### v2.0.1 (January 11, 2021) with Core SDK `v3.0.154`
 * Added `showMediaSelectDialog()` in `ChannelFragment` and `OpenChannelFragment`.
 * Added `takeCamera()`, `takePhoto()`, and `takeFile()` in `ChannelFragment` and `OpenChannelFragment`.
