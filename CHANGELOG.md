@@ -1,4 +1,115 @@
 # Change Log
+### v2.1.0 (March 18, 2021) with Core SDK `v3.0.159`
+* Added Message Search features.
+    * Added `MessageSearchActivity`, `MessageSearchFragment`, `MessageSearchAdpater` and `HighlightMessageInfo` classes.
+    * Added `isSupportMessageSearch()` in `Available`.
+    * Added `setHighlightMessageInfo(HighlightMessageInfo)` in `ChannelFragment.Builder`.
+    * Added `setStartingPoint(long)` in `ChannelFragment.Builder`.
+    * Added `setHighlightInfo(HighlightMessageInfo)` in `MessageListAdapter`.
+    * Added `setHighlightInfo(HighlightMessageInfo)` in `MessageViewHolder`.
+    * Added `IntentBuilder` class in `ChannelActivity`.
+        * Added `setStartingPoint(long)` in `ChannelActivity.IntentBuilder`.
+        * Added `setHighlightMessageInfo(HighlightMessageInfo)` in `ChannelActivity.IntentBuilder`.
+        * Added `build()` in `ChannelActivity.IntentBuilder`.
+* Added icon tint params methods.
+    * Added `setHeaderLeftButtonIcon(int, ColorStateList)` in `ChannelFragment.Builder`, `OpenChannelFragment.Builder`, `ChannelListFragment.Builder`, `BannedListFragment.Builder`, `MemberListFragment.Builder`, `MutedMemberListFragment.Builder`, `OperatorListFragment.Builder`, `ParticipantsListFragment.Builder`, `InviteChannelFragment.Builder`, `ChannelSettingsFragment.Builder`, `OpenChannelSettingsFragment.Builder`, `CreateChannelFragment.Builder`, `ModerationFragment.Builder` and `PromoteOperatorsList.Builder`.
+    * Added `setHeaderRightButtonIcon(int, ColorStateList)` in `ChannelFragment.Builder`, `OpenChannelFragment.Builder`,, `ChannelListFragment.Builder` `BannedListFragment.Builder`, `MemberListFragment.Builder`, `MutedMemberListFragment.Builder`, `OperatorListFragment.Builder`. 
+    * Added `setEmptyIcon(int, ColorStateList)` in `ChannelFragment.Builder`, `OpenChannelFragment.Builder`, `ChannelListFragment.Builder`, `BannedListFragment.Builder`, `MemberListFragment.Builder`, `MutedMemberListFragment.Builder`, `OperatorListFragment.Builder`, `ParticipantsListFragment.Builder`. 
+    * Added `setInputLeftButtonIcon(int, ColorStateList)` in `ChannelFragment.Builder`, `OpenChannelFragment.Builder`.
+    * Added `setInputRightButtonIcon(int, ColorStateList)` in `ChannelFragment.Builder`, `OpenChannelFragment.Builder`.
+* Added `setInputText(String)` in `ChannelFragment.Builder`, `OpenChannelFragment.Builder`.
+* Added `setOnEditModeTextChangedListener(OnInputTextChangedListener)` in `ChannelFragment.Builder`, `OpenChannelFragment.Builder`.
+* Added `setOnInputTextChangedListener(OnInputTextChangedListener)` in `ChannelFragment.Builder`, `OpenChannelFragment.Builder`.
+* Deprecated `lastSeenAt` feature.
+* Added IconSet.
+    * `icon_done_all.png`
+    * `icon_done.png`
+    * `icon_emoji_more.png`
+    * `icon_ban.png`
+    * `icon_moderations.png`
+    * `icon_mute.png`
+    * `icon_question.png`
+    * `icon_thumbnail_none.png`
+    * `icon_notification_filled.png`
+* Replaced IconSet.
+    * `emoji_fail.png` -> `icon_question.png`
+    * `emoji_more_large_dark.png` -> `icon_emoji_more.png`
+    * `emoji_more_large_light.png` -> `icon_emoji_more.png`
+    * `emoji_more_small_dark.png` -> `icon_emoji_more.png`
+    * `emoji_more_small_light.png` -> `icon_emoji_more.png`
+    * `icon_actions_delete.png` -> `icon_delete.png`
+    * `icon_add_disabled_dark.png` -> `icon_add.png`
+    * `icon_add_disabled_light.png` -> `icon_add.png`
+    * `icon_avatar_broadcast_dark.png` -> `icon_broadcast.png`
+    * `icon_avatar_broadcast_light.png` -> `icon_broadcast.png`
+    * `icon_avatar_dark.png` -> `icon_user.png`
+    * `icon_avatar_light.png` -> `icon_user.png`
+    * `icon_banned.png` -> `icon_ban.png`
+    * `icon_broadcast_preview.png` -> `icon_broadcast.png`
+    * `icon_checkbox.png` -> Removed
+    * `icon_close_dark.png` -> `icon_close.png`
+    * `icon_delivered.png` -> `icon_done_all.png`
+    * `icon_dummy.png` -> Removed
+    * `icon_more_disabled.png` -> `icon_more.png`
+    * `icon_mute_dark.png` -> `icon_mute.png`
+    * `icon_mute.png` -> `icon_notification_filled.png`
+    * `icon_muted.png` -> `icon_mute.png`
+    * `icon_no_thumbnail_dark.png` -> `icon_thumbnail_none.png`
+    * `icon_no_thumbnail_light.png` -> `icon_thumbnail_none.png`
+    * `icon_read.png` -> `icon_done_all.png`
+    * `icon_sent.png` -> `icon_done.png`
+    * `icon_spinner_large.png` -> `icon_spinner.png`
+    * `icon_success.png` -> `icon_done.png`
+    * `icon_thumbnail_dark.png` -> `icon_photo.png`
+    * `icon_thumbnail_light.png` -> `icon_photo.png`
+    * `moderations.png` -> `icon_moderations.png`
+    * `operator.png` -> `icon_operator.png`
+    * `sb_default_profile_image_1.png` -> Removed
+    * `sb_default_profile_image_2.png` -> Removed
+    * `icon_checkbox_on.png` -> Removed
+    * `icon_checkbox_off.png` -> Removed
+* Removed unused drawables.
+    * `selector_member_action_button.xml`
+    * `selector_message_input_chooser_icon_dark.xml`
+    * `selector_message_input_chooser_icon.xml`
+    * `chatbubble_incoming_dark.9.png`
+    * `chatbubble_incoming_light.9.png`
+    * `chatbubble_incoming_pressed_dark.9.png`
+    * `chatbubble_incoming_pressed_light.9.png`
+    * `chatbubble_outgoing_dark.9.png`
+    * `chatbubble_outgoing_light.9.png`
+    * `chatbubble_outgoing_pressed_dark.9.png`
+    * `chatbubble_outgoing_pressed_light.9.png`
+    * `selector_my_user_message_bubble_dark.xml`
+    * `selector_my_user_message_bubble_light.xml`
+    * `selector_my_other_message_bubble_dark.xml`
+    * `selector_my_other_message_bubble_light.xml`
+    * `chatbubble_reactions_dark.xml`
+    * `chatbubble_reactions_light.xml`
+* Removed legacy attuributes.
+    * `sb_dialog_view_left_button_text_appearance`
+    * `sb_dialog_view_left_button_text_color`
+    * `sb_dialog_view_left_button_background`
+    * `sb_dialog_view_right_button_text_appearance`
+    * `sb_dialog_view_right_button_text_color`
+    * `sb_dialog_view_right_button_background`
+    * `sb_dialog_view_alert_button_text_appearance`
+    * `sb_dialog_view_alert_button_text_color`
+    * `sb_dialog_view_alert_button_background`
+    * `sb_dialog_view_cancel_button_text_appearance`
+    * `sb_dialog_view_cancel_button_text_color`
+    * `sb_dialog_view_cancel_button_background`    
+* Changed ColorSet.
+    * Changes `Primary-*` colors.
+    * Changes `Secondary-*` colors.
+    * Changes `Background-300` color.
+    * Changes `Background-200` color.
+    * Changes `Background-100` color.
+    * Added `Background-50` color.
+    * Added `Error-*` colors.
+    * Removed `Error` color.
+* Fixed `ChannelFragment` memory leak.
+* Improved stability.
 
 ### v2.0.2 (January 26, 2021) with Core SDK `v3.0.156`
 * Added `setEmptyIcon(int resId)` in `ChannelFragment.Builder`, `ChannelListFragment.Builder`, and `OpenChannelFragment.Builder`.
