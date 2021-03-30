@@ -73,59 +73,61 @@ Go to `Android Studio` and create a project for UIKit for Android in the **Proje
 
 ### Install using Gradle
 
-UIKit for Android is installed via `Gradle`. Begin by opening the project's top-level `build.gradle` file and adding code blocks as below:
-
-> **Note**: Add the code blocks in your root `build.gradle` file, not your module `build.gradle` file.
+UIKit for Android is installed using `Gradle`. Begin by opening the **root** `build.gradle` file and adding code blocks as shown below:
 
 ```gradle
 buildscript {
-    repositories {
-        google()
-        jcenter()
-    }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:3.5.0'
-    }
+	repositories {
+		google()
+		jcenter()
+	}
+	dependencies {
+		classpath 'com.android.tools.build:gradle:3.5.0'
+	}
 }
 
 allprojects {
-    repositories {
-        google()
-        jcenter()
-        maven { url "https://jitpack.io" }
-    }
+	repositories {
+		google()
+		jcenter()
+		maven { url "https://jitpack.io" }
+		maven { url "https://repo.sendbird.com/public/maven" }
+	}
 }
 ```
 
-Then, open the `build.gradle` file at the application level. For `Java` and `Kotlin`, add code blocks and dependencies as below:
+> **Note**: Make sure the above code blocks aren't added to your module `bundle.gradle` file.
 
-> **Note**: Data binding should be enabled in your `build.gradle` file.
+Then, open the `build.gradle` file at the application level. For `Java` and `Kotlin`, add code blocks and dependencies as below:
 
 ```gradle
 apply plugin: 'com.android.application'
 
 android {
-    ...
-    
-    dataBinding {
-        enabled = true
-    }
-    
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
-    }
-    
-    ...
+	...
+
+	dataBinding {
+		enabled = true
+	}
+
+	compileOptions {
+		sourceCompatibility JavaVersion.VERSION_1_8
+		targetCompatibility JavaVersion.VERSION_1_8
+	}
+
+	...
 }
 
 dependencies {
-    implementation 'com.sendbird.sdk:uikit:LATEST_VERSION'
-    ...
+	...
+	implementation 'com.sendbird.sdk:uikit:LATEST_VERSION'
+	...
 }
 ```
 
-After saving your `build.gradle` file, click the **Sync** button to apply all the changes.
+Before saving the `build.gradle` file, check if you've enabled the data binding. Then, click the **Sync** button to apply all the changes.
+
+> **Note**: UIKit SDK versions `2.1.1` or lower can be downloaded from JCenter until February 1, 2022. SDK versions higher than `2.1.1` will be available on Sendbird's remote repository.
 
 <br />
 

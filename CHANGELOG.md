@@ -1,4 +1,9 @@
 # Change Log
+### v2.1.1 (March 30, 2021) with Core SDK `v3.0.160`
+* Added `setHeaderTitle(String)` in `ChannelFragment.Builder`, `OpenChannelFragment.Builder`.
+* Improved stability.
+* This is the last release that will be available on `jcenter`. From the next release, SDK binary will be available from Sendbird's maven repository: `maven { url "https://repo.sendbird.com/public/maven" }`.
+
 ### v2.1.0 (March 18, 2021) with Core SDK `v3.0.159`
 * Added Message Search features.
     * Added `MessageSearchActivity`, `MessageSearchFragment`, `MessageSearchAdpater` and `HighlightMessageInfo` classes.
