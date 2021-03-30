@@ -77,22 +77,22 @@ UIKit for Android is installed using `Gradle`. Begin by opening the **root** `bu
 
 ```gradle
 buildscript {
-	repositories {
-		google()
-		jcenter()
-	}
-	dependencies {
-		classpath 'com.android.tools.build:gradle:3.5.0'
-	}
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.5.0'
+    }
 }
 
 allprojects {
-	repositories {
-		google()
-		jcenter()
-		maven { url "https://jitpack.io" }
-		maven { url "https://repo.sendbird.com/public/maven" }
-	}
+    repositories {
+        google()
+        jcenter()
+        maven { url "https://jitpack.io" }
+        maven { url "https://repo.sendbird.com/public/maven" }
+    }
 }
 ```
 
@@ -104,24 +104,24 @@ Then, open the `build.gradle` file at the application level. For `Java` and `Kot
 apply plugin: 'com.android.application'
 
 android {
-	...
+    ...
 
-	dataBinding {
-		enabled = true
-	}
+    dataBinding {
+        enabled = true
+    }
 
-	compileOptions {
-		sourceCompatibility JavaVersion.VERSION_1_8
-		targetCompatibility JavaVersion.VERSION_1_8
-	}
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 
-	...
+    ...
 }
 
 dependencies {
-	...
-	implementation 'com.sendbird.sdk:uikit:LATEST_VERSION'
-	...
+    ...
+    implementation 'com.sendbird.sdk:uikit:LATEST_VERSION'
+    ...
 }
 ```
 
@@ -198,11 +198,11 @@ Add the created `BaseApplication` to the `AndroidManifest.xml`.
     package="com.sendbird.uikitapplication">
     
     <application
-                android:name=".BaseApplication"
-                android:icon="@mipmap/ic_launcher"
-                android:label="@string/app_name"
-                android:roundIcon="@mipmap/ic_launcher_round"
-                android:theme="@style/AppTheme">
+        android:name=".BaseApplication"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -217,10 +217,10 @@ Add the created `BaseApplication` to the `AndroidManifest.xml`.
 <resources>
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-            <!-- Customize your theme here. -->
-            <item name="colorPrimary">@color/colorPrimary</item>
-            <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-            <item name="colorAccent">@color/colorAccent</item>
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
     </style>
 
 </resources>
