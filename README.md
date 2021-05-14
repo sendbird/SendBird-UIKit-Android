@@ -45,7 +45,7 @@ The minimum requirements for UIKit for Android are:
 - `Android + (API level as 16 or higher)`
 - `Java 8`
 - `Support androidx only`
-- `Gradle 3.4.0 or higher`
+- `Gradle 3.4.5 or higher`
 
 <br />
 
